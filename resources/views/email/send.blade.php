@@ -8,6 +8,7 @@
 </head>
 <body>
     <h1>Hello, {{$user_name}}</h1>
+    
     <a href="{{$link}}">Email Verification</a>
 </body>
 </html>
