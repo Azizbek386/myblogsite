@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Auth;
 use Symfony\Component\HttpFoundation\Response;
 
 class CheckAuthMiddleware
+
 {
     /**
      * Handle an incoming request.
