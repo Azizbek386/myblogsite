@@ -28,6 +28,7 @@ class UpdateProfileRequest extends FormRequest
                 'nullable',
                 Rule::unique('users')->ignore(Auth::id()),
             ],
+            
             'email' => [
                 'nullable',
                 'email',
