@@ -16,8 +16,10 @@ Route::post('/login', [AuthController::class,'handleLogin'])->name('handleLogin'
 Route::put('/my/profile/update', [AuthController::class,'updateProfile'])->name('update.profile');
 Route::delete('/logout', [AuthController::class,'logout'])->name('logout');
 Route::get('/email-verify', [AuthController::class,'emailVerify'])->name('email.verify');
+
 Route::get('/users/profile/{username}', [PostController::class,'userProfile'])->name('users.profile');
 Route::patch('/read/notify{id}', [NotificationController::class,'readNotify'])->name('mark.notification.read');
+
 
 Route::middleware('checkAuth')->group(function () {
     Route::get('/my/profile', [AuthController::class,'profile'])->name('my.profile');
