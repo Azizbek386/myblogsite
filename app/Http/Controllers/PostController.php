@@ -106,6 +106,7 @@ class PostController extends Controller
             abort(403);
         }
         $this->deleteImage($post->image->image_path);
+        
         $post->delete();
         return redirect()->route('my.profile');
     }
