@@ -15,6 +15,7 @@
                     <div class="text-center sm:text-left">
                         <h1 class="text-2xl font-bold">{{$user->name}}</h1>
                         <p class="text-gray-600">{{$user->username}}</p>
+                        
                     </div>
                     @if(auth()->check())
                     <div class="mt-4 sm:mt-0 sm:ml-auto">
