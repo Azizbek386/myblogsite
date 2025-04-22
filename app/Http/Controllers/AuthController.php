@@ -80,6 +80,7 @@ class AuthController extends Controller
         $user->name = $request->name;
         $user->username = $request->username;
         $user->email = $request->email;
+        
 
         if(!empty($request->old_password)){
             if(!Hash::check($request->old_password, $user->password)){
