@@ -6,6 +6,7 @@ use App\Models\User;
 use App\Notifications\NewFollowerNotification;
 use Illuminate\Http\Request;
 
+
 class FollowController extends Controller
 {
     public function follow($id){
